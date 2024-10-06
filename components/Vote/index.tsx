@@ -9,16 +9,15 @@ import { useState } from "react";
 import NomineeCard from "./NomineeCard";
 
 interface IProps {
-  id: string;
   title: string;
   nominees: { name: string; picture: string }[];
 }
 
-export default function Vote({ id, title, nominees }: IProps) {
+export default function Vote({ title, nominees }: IProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <AccordionItem value={id} className="border-none">
+    <AccordionItem value={title} className="border-none">
       <AccordionTrigger
         className={`font-bold text-5xl h-28 flex justify-center gap-3 hover:bg-white hover:no-underline ${
           isOpen ? "bg-white" : "bg-[#f93fff]"
