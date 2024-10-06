@@ -12,7 +12,7 @@ export default function Header() {
     <div
       className={`fixed top-0 left-0 w-full transition-all duration-300 ease-in-out bg-[#f93fff] ${
         isScrolled ? "h-14" : "h-32"
-      } flex items-center px-4`}
+      } flex items-center px-4 z-30`}
       style={{ height: `${headerHeight}px` }} // Definindo altura baseada no estado
     >
       <div

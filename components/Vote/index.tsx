@@ -6,14 +6,15 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { useState } from "react";
+import NomineeCard from "./NomineeCard";
 
 interface IProps {
   id: string;
   title: string;
-  description: string;
+  nominees: { name: string; picture: string }[];
 }
 
-export default function Vote({ id, title, description }: IProps) {
+export default function Vote({ id, title, nominees }: IProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -28,7 +29,17 @@ export default function Vote({ id, title, description }: IProps) {
       >
         {title}
       </AccordionTrigger>
-      <AccordionContent>{description}</AccordionContent>
+      <AccordionContent className="flex justify-center items-center min-h-screen  p-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {nominees.map((nominee) => (
+            <NomineeCard
+              key={nominee.name}
+              name={nominee.name}
+              picture={nominee.picture}
+            />
+          ))}
+        </div>
+      </AccordionContent>
     </AccordionItem>
   );
 }

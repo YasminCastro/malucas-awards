@@ -15,7 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`h-screen bg-gradient-to-b from-[#f93fff]  to-[#f7f908]`}
+        className={`h-screen bg-gradient-to-b from-[#f93fff]  to-[#f7f908] bg-fixed`}
       >
         <TopbarProvider>{children}</TopbarProvider>
       </body>

@@ -7,12 +7,10 @@ import Vote from "@/components/Vote";
 import { useTopbarContext } from "@/providers/Topbar";
 
 export default function Home() {
-  const { headerHeight } = useTopbarContext(); // Usar a altura do header
+  const { headerHeight } = useTopbarContext();
 
   return (
     <div style={{ marginTop: `${headerHeight}px` }}>
-      {" "}
-      {/* Adicionar margem baseada no header */}
       <Header />
       <LoginHeader />
       <Accordion type="multiple">
@@ -22,7 +20,7 @@ export default function Home() {
               key={item.id}
               id={item.id}
               title={item.title}
-              description={item.description}
+              nominees={item.nominees}
             />
           );
         })}
@@ -32,11 +30,26 @@ export default function Home() {
 }
 
 const data = [
-  { id: "1", title: "Video of the Year", description: "TESTE" },
-  { id: "2", title: "Artist of the Year", description: "TESTE" },
-  { id: "3", title: "Artist of the Year", description: "TESTE" },
-  { id: "4", title: "Artist of the Year", description: "TESTE" },
-  { id: "5", title: "Artist of the Year", description: "TESTE" },
-  { id: "6", title: "Artist of the Year", description: "TESTE" },
-  { id: "7", title: "Artist of the Year", description: "TESTE" },
+  {
+    id: "1",
+    title: "Video of the Year",
+    nominees: [
+      { name: "Anna Carolina Crat", picture: "annacrat.jpeg" },
+      { name: "Evelyn", picture: "evelyn.jpeg" },
+      { name: "Glaucia", picture: "glaucia.jpeg" },
+      { name: "Iara", picture: "iara.jpeg" },
+      { name: "José", picture: "jose.jpeg" },
+      { name: "Maria Clara", picture: "mariaclara.jpeg" },
+      { name: "Matheus", picture: "matheus.jpeg" },
+      { name: "Rharyson", picture: "rharyson.jpeg" },
+      { name: "Vittor", picture: "vittor.jpeg" },
+      { name: "Yasmin", picture: "yasmin.jpg" },
+    ],
+  },
+  { id: "2", title: "Artist of the Year", nominees: [] },
+  { id: "3", title: "Artist of the Year", nominees: [] },
+  { id: "4", title: "Artist of the Year", nominees: [] },
+  { id: "5", title: "Artist of the Year", nominees: [] },
+  { id: "6", title: "Artist of the Year", nominees: [] },
+  { id: "7", title: "Artist of the Year", nominees: [] },
 ];
