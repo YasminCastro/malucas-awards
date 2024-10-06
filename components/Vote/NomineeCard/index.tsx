@@ -3,9 +3,9 @@ import Image from "next/image";
 interface IProps {
   name: string;
   picture: string;
-  isWinner?: boolean;
+  winner?: string;
 }
-export default function NomineeCard({ picture, name, isWinner }: IProps) {
+export default function NomineeCard({ picture, name, winner }: IProps) {
   return (
     <div className="relative max-w-[380px] max-h-[380px] w-full h-full overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105">
       <div className="relative w-full h-full">
@@ -18,7 +18,7 @@ export default function NomineeCard({ picture, name, isWinner }: IProps) {
         />
       </div>
       <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black to-transparent flex flex-col gap-2 ">
-        {isWinner && (
+        {winner === name && (
           <span className="bg-[#f93fff] text-black font-bold p-1 w-fit">
             GANHADOR
           </span>

@@ -11,9 +11,10 @@ import NomineeCard from "./NomineeCard";
 interface IProps {
   title: string;
   nominees: { name: string; picture: string }[];
+  winner: string | undefined;
 }
 
-export default function Vote({ title, nominees }: IProps) {
+export default function Vote({ title, nominees, winner }: IProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -35,6 +36,7 @@ export default function Vote({ title, nominees }: IProps) {
               key={nominee.name}
               name={nominee.name}
               picture={nominee.picture}
+              winner={winner}
             />
           ))}
         </div>

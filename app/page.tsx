@@ -17,7 +17,12 @@ export default function Home() {
       <Accordion type="multiple">
         {categoriesNominees.map((item, index) => {
           return (
-            <Vote key={index} title={item.title} nominees={item.nominees} />
+            <Vote
+              key={index}
+              title={item.title}
+              nominees={item.nominees}
+              winner={item.winner}
+            />
           );
         })}
       </Accordion>
