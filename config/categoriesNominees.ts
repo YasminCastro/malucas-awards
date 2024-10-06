@@ -90,6 +90,10 @@ const data: ICategories[] = [
     title: "Ausente do Ano",
     nominees: [], //Kris, anna amelia, gabriel
   },
+  {
+    title: "Fofoqueira do Ano",
+    nominees: [], //biajante, rhary, glaucia
+  },
 ];
 
 data.forEach((category) => {
