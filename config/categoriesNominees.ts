@@ -1,10 +1,10 @@
-interface ICategories {
+export interface ICategories {
   title: string;
   nominees: INominees[];
   winner?: string;
 }
 
-interface INominees {
+export interface INominees {
   name: string;
   picture: string;
 }

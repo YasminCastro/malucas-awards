@@ -7,14 +7,9 @@ import {
 } from "@/components/ui/accordion";
 import { useState } from "react";
 import NomineeCard from "./NomineeCard";
+import { ICategories } from "@/config/categoriesNominees";
 
-interface IProps {
-  title: string;
-  nominees: { name: string; picture: string }[];
-  winner: string | undefined;
-}
-
-export default function Vote({ title, nominees, winner }: IProps) {
+export default function Vote({ title, nominees, winner }: ICategories) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
