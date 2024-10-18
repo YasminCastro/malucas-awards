@@ -15,14 +15,13 @@ export default function Vote({ title, nominees, winner }: ICategories) {
   return (
     <AccordionItem value={title} className="border-none ">
       <AccordionTrigger
-        className={`font-bold text-5xl h-28 flex justify-center gap-3 hover:bg-white hover:no-underline ${
-          isOpen ? "bg-white" : "bg-[#f93fff]"
-        } `}
+        className={`font-bold text-5xl h-28 flex justify-center gap-3 hover:bg-white hover:no-underline max-lg:text-4xl  max-md:text-3xl max-sm:text-xl max-md:h-24
+           ${isOpen ? "bg-white" : "bg-[#f93fff]"} `}
         onClick={() => {
           setIsOpen(!isOpen);
         }}
       >
-        {title}
+        <p className="w-1/2">{title}</p>
       </AccordionTrigger>
       <AccordionContent className="flex justify-center items-center p-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
