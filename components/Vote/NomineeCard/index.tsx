@@ -7,7 +7,7 @@ interface IProps {
 }
 export default function NomineeCard({ picture, name, winner }: IProps) {
   return (
-    <div className="relative max-w-[380px] max-h-[380px] w-full h-full overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105">
+    <div className="relative max-w-[380px] max-h-[380px] w-full h-full overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105 max-xl:max-w-[280px] max-xl:max-h-[280px]">
       <div className="relative w-full h-full">
         <Image
           src={`/nominees/${picture}`}
