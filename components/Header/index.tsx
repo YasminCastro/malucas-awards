@@ -10,15 +10,19 @@ export default function Header() {
 
   return (
     <div
-      className={`fixed top-0 left-0 w-full transition-all duration-300 ease-in-out bg-[#f93fff] ${
+      className={`fixed top-0 left-0 w-full bg-[#f93fff] ${
         isScrolled ? "h-14" : "h-32"
-      } flex items-center px-4 z-30`}
-      style={{ height: `${headerHeight}px` }} // Definindo altura baseada no estado
+      } flex items-center px-4 z-30 transition-none`} // Removendo transição do height
+      style={{ height: `${headerHeight}px`, transition: "none" }} // Ajustar para que a altura mude instantaneamente
     >
       <div
-        className={`transition-transform duration-300 ease-in-out transform ${
-          isScrolled ? "translate-x-0" : "translate-x-[50%]"
+        className={`transition-all duration-500 ease-in-out ${
+          isScrolled ? "ml-0" : "ml-[calc(50%-90px)]"
         }`}
+        style={{
+          transition:
+            "margin-left 0.5s ease-in-out, transform 0.5s ease-in-out",
+        }}
       >
         <Image
           src="/logo.png"
