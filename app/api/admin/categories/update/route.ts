@@ -1,11 +1,14 @@
-import { getCategoriesCollection } from "@/lib/collections/categories";
+import {
+  getCategoriesCollection,
+  INominees,
+} from "@/lib/collections/categories";
 import db from "@/lib/dbClient";
 import { NextResponse } from "next/server";
 
 interface IUpdateCategorie {
   title: string;
   winner?: string;
-  nominees?: string[];
+  nominees?: INominees[];
 }
 
 export async function PUT(req: Request) {

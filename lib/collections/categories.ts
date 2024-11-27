@@ -1,10 +1,16 @@
 import db from "@/lib/dbClient";
 import { Collection } from "mongodb";
 
+export interface INominees {
+  ig: string;
+  imagePath: string;
+  votes?: number;
+}
+
 export interface ICategories {
   title: string;
   winner?: string;
-  nominees?: string[];
+  nominees?: INominees[];
 }
 
 export async function getCategoriesCollection(): Promise<
