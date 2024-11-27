@@ -1,15 +1,10 @@
-import { getUsersCollection } from "@/lib/collections/users";
+import { getUsersCollection, IUser } from "@/lib/collections/users";
 import db from "@/lib/dbClient";
 import { NextResponse } from "next/server";
 
-interface INewGuest {
-  name: string;
-  ig: string;
-}
-
 export async function POST(req: Request) {
   try {
-    const { name, ig }: INewGuest = await req.json();
+    const { name, ig, imagePath }: IUser = await req.json();
 
     if (!name) throw new Error("Name is missing");
     if (!ig) throw new Error("Instagram handle is missing");
@@ -19,7 +14,7 @@ export async function POST(req: Request) {
 
     const usersCollection = await getUsersCollection();
 
-    const result = await usersCollection.insertOne({ name, ig });
+    const result = await usersCollection.insertOne({ name, ig, imagePath });
 
     return NextResponse.json(
       { message: "User created successfully", id: result.insertedId },

@@ -4,23 +4,28 @@ import { NextResponse } from "next/server";
 
 interface IUpdateGuest {
   ig: string;
-  name: string;
+  name?: string;
+  imagePath?: string;
 }
 
 export async function PUT(req: Request) {
   try {
-    const { name, ig }: IUpdateGuest = await req.json();
+    const { name, ig, imagePath }: IUpdateGuest = await req.json();
 
     if (!ig) throw new Error("Instagram handle is missing");
 
     const database = await db;
     if (!database) throw new Error("Database is not connected");
 
+    const updateFields: Partial<IUpdateGuest> = {};
+    if (name !== undefined) updateFields.name = name;
+    if (imagePath !== undefined) updateFields.imagePath = imagePath;
+
     const usersCollection = await getUsersCollection();
 
     const result = await usersCollection.findOneAndUpdate(
       { ig },
-      { $set: { name } },
+      { $set: updateFields },
       { returnDocument: "after" }
     );
     return NextResponse.json(result, { status: 200 });

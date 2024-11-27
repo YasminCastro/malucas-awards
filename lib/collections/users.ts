@@ -4,6 +4,7 @@ import { Collection } from "mongodb";
 export interface IUser {
   name: string;
   ig: string;
+  imagePath: string;
 }
 
 export async function getUsersCollection(): Promise<Collection<IUser>> {
