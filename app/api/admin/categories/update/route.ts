@@ -1,30 +1,30 @@
-import { getUsersCollection } from "@/lib/collections/users";
+import { getCategoriesCollection } from "@/lib/collections/categories";
 import db from "@/lib/dbClient";
 import { NextResponse } from "next/server";
 
-interface IUpdateGuest {
-  ig: string;
-  name?: string;
-  imagePath?: string;
+interface IUpdateCategorie {
+  title: string;
+  winner?: string;
+  nominees?: string[];
 }
 
 export async function PUT(req: Request) {
   try {
-    const { name, ig, imagePath }: IUpdateGuest = await req.json();
+    const { winner, title, nominees }: IUpdateCategorie = await req.json();
 
-    if (!ig) throw new Error("Instagram handle is missing");
+    if (!title) throw new Error("Instagram handle is missing");
 
     const database = await db;
     if (!database) throw new Error("Database is not connected");
 
-    const updateFields: Partial<IUpdateGuest> = {};
-    if (name !== undefined) updateFields.name = name;
-    if (imagePath !== undefined) updateFields.imagePath = imagePath;
+    const updateFields: Partial<IUpdateCategorie> = {};
+    if (winner !== undefined) updateFields.winner = winner;
+    if (nominees !== undefined) updateFields.nominees = nominees;
 
-    const usersCollection = await getUsersCollection();
+    const categoriesCollection = await getCategoriesCollection();
 
-    const result = await usersCollection.findOneAndUpdate(
-      { ig },
+    const result = await categoriesCollection.findOneAndUpdate(
+      { title },
       { $set: updateFields },
       { returnDocument: "after" }
     );
