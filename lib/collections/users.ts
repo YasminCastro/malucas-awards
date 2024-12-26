@@ -5,6 +5,8 @@ export interface IUser {
   name: string;
   ig: string;
   imagePath: string;
+  passwordSet: boolean;
+  passwordHash?: string;
 }
 
 export async function getUsersCollection(): Promise<Collection<IUser>> {

@@ -1,12 +1,17 @@
-import { getUsersCollection, IUser } from "@/lib/collections/users";
+import { getUsersCollection } from "@/lib/collections/users";
 import db from "@/lib/dbClient";
 import { NextResponse } from "next/server";
+import bcrypt from "bcrypt";
 
-export async function POST(req: Request) {
+interface IUpdateGuest {
+  ig: string;
+  password: string;
+}
+
+export async function PUT(req: Request) {
   try {
-    const { name, ig, imagePath }: IUser = await req.json();
+    const { ig, password }: IUpdateGuest = await req.json();
 
-    if (!name) throw new Error("Name is missing");
     if (!ig) throw new Error("Instagram handle is missing");
 
     const database = await db;
@@ -14,17 +19,15 @@ export async function POST(req: Request) {
 
     const usersCollection = await getUsersCollection();
 
-    const result = await usersCollection.insertOne({
-      name,
-      ig,
-      imagePath,
-      passwordSet: false,
-    });
+    const saltRounds = 10;
+    const passwordHash = await bcrypt.hash(password, saltRounds);
 
-    return NextResponse.json(
-      { message: "User created successfully", id: result.insertedId },
-      { status: 200 }
+    const result = await usersCollection.findOneAndUpdate(
+      { ig },
+      { $set: { passwordHash, passwordSet: true } },
+      { returnDocument: "after" }
     );
+    return NextResponse.json(result, { status: 200 });
   } catch (error: any) {
     if (error.code === 11000) {
       return NextResponse.json(
