@@ -23,9 +23,11 @@ import {
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import Link from "next/link";
+import Cookies from "js-cookie";
+import { useRouter } from "next/navigation";
 
 export default function Signup() {
+  const router = useRouter();
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -51,6 +53,11 @@ export default function Signup() {
           type: "validate",
           message: result.message,
         });
+      }
+
+      if (result.token) {
+        Cookies.set("token", result.token, { expires: 1 });
+        router.push("/");
       }
     } catch (error: any) {
       form.setError("password", {

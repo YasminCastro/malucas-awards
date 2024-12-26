@@ -2,6 +2,7 @@ import { getUsersCollection } from "@/lib/collections/users";
 import db from "@/lib/dbClient";
 import { NextResponse } from "next/server";
 import bcrypt from "bcrypt";
+import jwt from "jsonwebtoken";
 
 interface IUpdateGuest {
   ig: string;
@@ -53,12 +54,17 @@ export async function PUT(req: Request) {
     const saltRounds = 10;
     const passwordHash = await bcrypt.hash(password, saltRounds);
 
-    const result = await usersCollection.findOneAndUpdate(
+    await usersCollection.findOneAndUpdate(
       { ig },
       { $set: { passwordHash, passwordSet: true } },
       { returnDocument: "after" }
     );
-    return NextResponse.json(result, { status: 200 });
+
+    const token = jwt.sign({ ig: user.ig }, process.env.SECRET_TOKEN!, {
+      expiresIn: "1h",
+    });
+
+    return NextResponse.json({ token }, { status: 200 });
   } catch (error: any) {
     return NextResponse.json(
       { message: "An unexpected error occurred. Please try again later." },
