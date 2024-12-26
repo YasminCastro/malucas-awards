@@ -5,11 +5,11 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 
 const formSchema = z.object({
-  username: z.string().min(2, {
-    message: "Username must be at least 2 characters.",
+  ig: z.string().min(2, {
+    message: "Instagram deve ter pelo menos 2 caracteres.",
   }),
-  password: z.string().min(2, {
-    message: "Password must be at least 2 characters.",
+  password: z.string().min(5, {
+    message: "Senha deve ter pelo menos 5 caracteres.",
   }),
 });
 import {
@@ -29,12 +29,36 @@ export default function Signup() {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      username: "",
+      ig: "",
+      password: "",
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    try {
+      const response = await fetch("/api/admin/users/change-password", {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(values),
+      });
+
+      const result = await response.json();
+
+      if (result.message) {
+        form.setError("password", {
+          type: "validate",
+          message: result.message,
+        });
+      }
+    } catch (error: any) {
+      form.setError("password", {
+        type: "manual",
+        message:
+          "Erro ao tentar cadastrar senha, tente novamente mais tarde (ou fale com a Yasmin).",
+      });
+    }
   }
 
   return (
@@ -51,10 +75,10 @@ export default function Signup() {
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-3">
             <FormField
               control={form.control}
-              name="username"
+              name="ig"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Username</FormLabel>
+                  <FormLabel>Instagram</FormLabel>
                   <FormControl>
                     <Input placeholder="Digite seu @ do instagram" {...field} />
                   </FormControl>
@@ -69,7 +93,11 @@ export default function Signup() {
                 <FormItem>
                   <FormLabel>Senha</FormLabel>
                   <FormControl>
-                    <Input placeholder="Digite sua senha" {...field} />
+                    <Input
+                      placeholder="Crie uma senha agora"
+                      {...field}
+                      type="password"
+                    />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
