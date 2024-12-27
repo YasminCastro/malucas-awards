@@ -69,7 +69,7 @@ export default function NomineeCard({
       className="relative max-w-[380px] max-h-[380px] w-full h-full overflow-hidden shadow-lg transform transition-transform duration-300 hover:scale-105 max-xl:max-w-[280px] max-xl:max-h-[280px]"
       onClick={handleVote}
     >
-      <div className="relative w-full h-full">
+      <div className="relative w-full h-full cursor-pointer">
         <Image
           src={`/nominees/${picture}`}
           alt={name}
