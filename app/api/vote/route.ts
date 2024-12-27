@@ -1,13 +1,16 @@
-import { getCategoriesCollection } from "@/lib/collections/categories";
+import {
+  getCategoriesCollection,
+  INominees,
+} from "@/lib/collections/categories";
 import { getUsersCollection, IUser } from "@/lib/collections/users";
 import db from "@/lib/dbClient";
 import { NextResponse } from "next/server";
 
 interface IVoteRequest {
-  ig: string;
+  ig: string; // Instagram handle of the voter
   categoryTitle: string;
-  nomineeIg: string;
-  action: "vote" | "unvote";
+  nomineeIg: string; // Instagram handle of the nominee
+  action: "vote" | "unvote"; // Action to either vote or unvote
 }
 
 export async function POST(req: Request) {
@@ -72,16 +75,25 @@ export async function POST(req: Request) {
 
     if (action === "vote") {
       if (user.votedCategories?.includes(categoryTitle)) {
-        return NextResponse.json(
-          { message: "Você já votou nesta categoria." },
-          { status: 400 }
+        // Remover o voto anterior
+        const previousNominee = category.nominees?.find(
+          (nominee) =>
+            user.votedCategories?.includes(categoryTitle) &&
+            nominee.ig !== nomineeIg
         );
+        if (previousNominee) {
+          previousNominee.votes = (previousNominee.votes || 0) - 1;
+          await categoriesCollection.updateOne(
+            { title: categoryTitle, "nominees.ig": previousNominee.ig },
+            { $set: { "nominees.$.votes": previousNominee.votes } }
+          );
+        }
       }
 
       nominee.votes = (nominee.votes || 0) + 1;
       await usersCollection.updateOne(
         { ig },
-        { $push: { votedCategories: categoryTitle } }
+        { $addToSet: { votedCategories: categoryTitle } }
       );
     } else if (action === "unvote") {
       if (!user.votedCategories?.includes(categoryTitle)) {
