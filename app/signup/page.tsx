@@ -38,8 +38,8 @@ export default function Signup() {
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
     try {
-      const response = await fetch("/api/admin/users/change-password", {
-        method: "PUT",
+      const response = await fetch("/api/signup", {
+        method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
