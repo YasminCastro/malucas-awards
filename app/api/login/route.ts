@@ -41,7 +41,7 @@ export async function POST(req: Request) {
       return NextResponse.json(
         {
           message:
-            "Usuário não encontrado. Tem certeza que você está no grupo das Malucas?",
+            "Usuário não encontrado. Tem certeza que você está no Grupo das Malucas?",
         },
         { status: 400 }
       );
@@ -61,8 +61,7 @@ export async function POST(req: Request) {
     if (!isPasswordValid) {
       return NextResponse.json(
         {
-          message:
-            "Senha inválida. Tente novamente ou peça ajuda para a Yasmin.",
+          message: "Senha inválida. Tente novamente.",
         },
         { status: 400 }
       );
