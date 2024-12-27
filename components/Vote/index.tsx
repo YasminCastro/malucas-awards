@@ -3,15 +3,45 @@ import {
   AccordionTrigger,
   AccordionContent,
 } from "@/components/ui/accordion";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import NomineeCard from "./NomineeCard";
 import { ICategories } from "@/lib/collections/categories";
+import Cookies from "js-cookie";
+import jwt from "jsonwebtoken";
 
 export default function Vote({ title, nominees, winner }: ICategories) {
   const [isOpen, setIsOpen] = useState(false);
   const [votedNomineeIg, setVotedNomineeIg] = useState<string | undefined>(
     undefined
   );
+
+  useEffect(() => {
+    const token = Cookies.get("token");
+    if (token) {
+      const decoded: any = jwt.decode(token);
+      const voterIg = decoded.ig;
+
+      fetchUserVotes(voterIg);
+    }
+  }, [title]);
+
+  async function fetchUserVotes(voterIg: string) {
+    try {
+      const response = await fetch(
+        `/api/admin/users/get-one?voterIg=${voterIg}`
+      );
+      const user = await response.json();
+      const vote = user.votedCategories?.find(
+        (vote: { categoryTitle: string }) => vote.categoryTitle === title
+      );
+
+      if (vote) {
+        setVotedNomineeIg(vote.nomineeIg);
+      }
+    } catch (error) {
+      console.error("Erro ao buscar votos do usuário:", error);
+    }
+  }
 
   return (
     <AccordionItem value={title} className="border-none">

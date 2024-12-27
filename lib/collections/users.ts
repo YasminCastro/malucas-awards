@@ -7,7 +7,7 @@ export interface IUser {
   imagePath: string;
   passwordSet: boolean;
   passwordHash?: string;
-  votedCategories?: string[];
+  votedCategories?: { categoryTitle: string; nomineeIg: string }[];
 }
 
 export async function getUsersCollection(): Promise<Collection<IUser>> {

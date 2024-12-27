@@ -74,12 +74,13 @@ export async function POST(req: Request) {
     }
 
     if (action === "vote") {
-      if (user.votedCategories?.includes(categoryTitle)) {
+      const previousVote = user.votedCategories?.find(
+        (vote) => vote.categoryTitle === categoryTitle
+      );
+      if (previousVote) {
         // Remover o voto anterior
         const previousNominee = category.nominees?.find(
-          (nominee) =>
-            user.votedCategories?.includes(categoryTitle) &&
-            nominee.ig !== nomineeIg
+          (nominee) => nominee.ig === previousVote.nomineeIg
         );
         if (previousNominee) {
           previousNominee.votes = (previousNominee.votes || 0) - 1;
@@ -93,10 +94,19 @@ export async function POST(req: Request) {
       nominee.votes = (nominee.votes || 0) + 1;
       await usersCollection.updateOne(
         { ig },
-        { $addToSet: { votedCategories: categoryTitle } }
+        { $pull: { votedCategories: { categoryTitle } } }
+      );
+      await usersCollection.updateOne(
+        { ig },
+        { $push: { votedCategories: { categoryTitle, nomineeIg } } }
       );
     } else if (action === "unvote") {
-      if (!user.votedCategories?.includes(categoryTitle)) {
+      if (
+        !user.votedCategories?.some(
+          (vote) =>
+            vote.categoryTitle === categoryTitle && vote.nomineeIg === nomineeIg
+        )
+      ) {
         return NextResponse.json(
           { message: "Você ainda não votou nesta categoria." },
           { status: 400 }
@@ -106,7 +116,7 @@ export async function POST(req: Request) {
       nominee.votes = (nominee.votes || 0) - 1;
       await usersCollection.updateOne(
         { ig },
-        { $pull: { votedCategories: categoryTitle } }
+        { $pull: { votedCategories: { categoryTitle, nomineeIg } } }
       );
     }
 
