@@ -3,6 +3,7 @@ import { Collection } from "mongodb";
 
 export interface INominees {
   ig: string;
+  name: string;
   imagePath: string;
   votes?: number;
 }
