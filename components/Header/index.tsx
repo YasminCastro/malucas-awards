@@ -2,11 +2,20 @@
 
 import { useTopbarContext } from "@/providers/Topbar";
 import Image from "next/image";
+import Cookies from "js-cookie";
+import { useRouter } from "next/navigation";
+import { LogOut } from "lucide-react";
 
-export default function Header() {
+export default function Header({ isLoggedIn }: { isLoggedIn: boolean }) {
   const { headerHeight } = useTopbarContext(); // Usar a altura do contexto
+  const router = useRouter();
 
   const isScrolled = headerHeight === 56; // Verificar se está no estado "scrolled"
+
+  const handleLogout = () => {
+    Cookies.remove("token");
+    router.push("/login");
+  };
 
   return (
     <div
@@ -31,6 +40,15 @@ export default function Header() {
           height={isScrolled ? 80 : 180}
         />
       </div>
+
+      {isLoggedIn && (
+        <button
+          className="ml-auto cursor-pointer flex items-center"
+          onClick={handleLogout}
+        >
+          <LogOut className="mr-2" />
+        </button>
+      )}
     </div>
   );
 }

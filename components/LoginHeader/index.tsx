@@ -1,21 +1,6 @@
 import Link from "next/link";
-import { useEffect, useState } from "react";
-import Cookies from "js-cookie";
-import jwt from "jsonwebtoken";
 
-export default function LoginHeader() {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-
-  useEffect(() => {
-    const token = Cookies.get("token");
-    if (token) {
-      const decoded: any = jwt.decode(token);
-      if (decoded && decoded.ig) {
-        setIsLoggedIn(true);
-      }
-    }
-  }, []);
-
+export default function LoginHeader({ isLoggedIn }: { isLoggedIn: boolean }) {
   return (
     <Link
       className="bg-[#f7f908] flex justify-center items-center flex-col p-14 gap-3 max-md:p-8"
