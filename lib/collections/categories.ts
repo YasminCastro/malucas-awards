@@ -11,7 +11,7 @@ export interface INominees {
 export interface ICategories {
   title: string;
   winner?: string;
-  nominees?: INominees[];
+  nominees: INominees[];
 }
 
 export async function getCategoriesCollection(): Promise<

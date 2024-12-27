@@ -7,7 +7,7 @@ import {
 } from "@/components/ui/accordion";
 import { useState } from "react";
 import NomineeCard from "./NomineeCard";
-import { ICategories } from "@/config/categoriesNominees";
+import { ICategories } from "@/lib/collections/categories";
 
 export default function Vote({ title, nominees, winner }: ICategories) {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,7 +29,7 @@ export default function Vote({ title, nominees, winner }: ICategories) {
             <NomineeCard
               key={nominee.name}
               name={nominee.name}
-              picture={nominee.picture}
+              picture={nominee.imagePath}
               winner={winner}
             />
           ))}
