@@ -3,7 +3,7 @@ import {
   AccordionTrigger,
   AccordionContent,
 } from "@/components/ui/accordion";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import NomineeCard from "./NomineeCard";
 import { ICategories } from "@/lib/collections/categories";
 import Cookies from "js-cookie";
@@ -15,6 +15,27 @@ export default function Vote({ title, nominees, winner }: ICategories) {
     undefined
   );
 
+  const fetchUserVotes = useCallback(
+    async (voterIg: string) => {
+      try {
+        const response = await fetch(
+          `/api/admin/users/get-one?voterIg=${voterIg}`
+        );
+        const user = await response.json();
+        const vote = user.votedCategories?.find(
+          (vote: { categoryTitle: string }) => vote.categoryTitle === title
+        );
+
+        if (vote) {
+          setVotedNomineeIg(vote.nomineeIg);
+        }
+      } catch (error) {
+        console.error("Erro ao buscar votos do usuário:", error);
+      }
+    },
+    [title]
+  );
+
   useEffect(() => {
     const token = Cookies.get("token");
     if (token) {
@@ -23,25 +44,7 @@ export default function Vote({ title, nominees, winner }: ICategories) {
 
       fetchUserVotes(voterIg);
     }
-  }, [title]);
-
-  async function fetchUserVotes(voterIg: string) {
-    try {
-      const response = await fetch(
-        `/api/admin/users/get-one?voterIg=${voterIg}`
-      );
-      const user = await response.json();
-      const vote = user.votedCategories?.find(
-        (vote: { categoryTitle: string }) => vote.categoryTitle === title
-      );
-
-      if (vote) {
-        setVotedNomineeIg(vote.nomineeIg);
-      }
-    } catch (error) {
-      console.error("Erro ao buscar votos do usuário:", error);
-    }
-  }
+  }, [title, fetchUserVotes]);
 
   return (
     <AccordionItem value={title} className="border-none">
