@@ -59,7 +59,7 @@ export default function Signup() {
         Cookies.set("token", result.token, { expires: 1 });
         router.push("/");
       }
-    } catch (error: any) {
+    } catch {
       form.setError("password", {
         type: "manual",
         message:

@@ -2,7 +2,7 @@ import { getCategoriesCollection } from "@/lib/collections/categories";
 import db from "@/lib/dbClient";
 import { NextResponse } from "next/server";
 
-export async function GET(req: Request) {
+export async function GET() {
   try {
     const database = await db;
     if (!database) throw new Error("Database is not connected");

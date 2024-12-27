@@ -36,7 +36,7 @@ export async function GET(req: Request) {
     }
 
     return NextResponse.json(user, { status: 200 });
-  } catch (error: any) {
+  } catch {
     return NextResponse.json(
       { message: "Algo deu errado. Tente novamente mais tarde." },
       { status: 500 }

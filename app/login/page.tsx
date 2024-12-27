@@ -59,7 +59,7 @@ export default function Login() {
         Cookies.set("token", result.token);
         router.push("/");
       }
-    } catch (error: any) {
+    } catch {
       form.setError("password", {
         type: "manual",
         message:

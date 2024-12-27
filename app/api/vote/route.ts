@@ -1,16 +1,13 @@
-import {
-  getCategoriesCollection,
-  INominees,
-} from "@/lib/collections/categories";
-import { getUsersCollection, IUser } from "@/lib/collections/users";
+import { getCategoriesCollection } from "@/lib/collections/categories";
+import { getUsersCollection } from "@/lib/collections/users";
 import db from "@/lib/dbClient";
 import { NextResponse } from "next/server";
 
 interface IVoteRequest {
-  ig: string; // Instagram handle of the voter
+  ig: string;
   categoryTitle: string;
-  nomineeIg: string; // Instagram handle of the nominee
-  action: "vote" | "unvote"; // Action to either vote or unvote
+  nomineeIg: string;
+  action: "vote" | "unvote";
 }
 
 export async function POST(req: Request) {
@@ -129,7 +126,7 @@ export async function POST(req: Request) {
       { message: "Voto registrado com sucesso." },
       { status: 200 }
     );
-  } catch (error: any) {
+  } catch {
     return NextResponse.json(
       { message: "Algo deu errado. Tente novamente mais tarde." },
       { status: 500 }

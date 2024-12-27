@@ -69,7 +69,7 @@ export async function POST(req: Request) {
     const token = jwt.sign({ ig: user.ig }, process.env.SECRET_TOKEN!);
 
     return NextResponse.json({ token }, { status: 200 });
-  } catch (error: any) {
+  } catch {
     return NextResponse.json(
       {
         message:
