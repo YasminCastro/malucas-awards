@@ -59,6 +59,7 @@ export async function PUT(req: Request) {
           );
         }
       }
+      nomineesData.sort((a, b) => a.name.localeCompare(b.name));
       updateFields.nominees = nomineesData;
     }
 

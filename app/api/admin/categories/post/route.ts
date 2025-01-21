@@ -61,6 +61,8 @@ export async function POST(req: Request) {
       }
     }
 
+    nomineesData.sort((a, b) => a.name.localeCompare(b.name));
+
     const result = await categoriesCollection.insertOne({
       title,
       nominees: nomineesData,
