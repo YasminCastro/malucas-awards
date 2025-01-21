@@ -63,7 +63,7 @@ export default function Login() {
       form.setError("password", {
         type: "manual",
         message:
-          "Erro ao tentar fazer login, tente novamente mais tarde (ou fale com a Yasmin).",
+          "Erro ao tentar fazer login, tente novamente mais tarde (ou fale com a Yas).",
       });
     }
   }

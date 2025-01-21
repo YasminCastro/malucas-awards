@@ -74,7 +74,7 @@ export async function POST(req: Request) {
     return NextResponse.json(
       {
         message:
-          "Algo deu errado. Tente novamente mais tarde ou fale com a Yasmin.",
+          "Algo deu errado. Tente novamente mais tarde ou fale com a Yas.",
       },
       { status: 500 }
     );

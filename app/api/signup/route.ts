@@ -41,7 +41,7 @@ export async function POST(req: Request) {
       return NextResponse.json(
         {
           message:
-            "Você não está cadastrado no Maluca Awards. Se você não faz parte do grupo, que pena, não poderá votar. Agora, se faz parte e mesmo assim não aparece, fala com a Yasmin pra ela te cadastrar.",
+            "Você não está cadastrado no Maluca Awards. Se você não faz parte do grupo, que pena, não poderá votar. Agora, se faz parte e mesmo assim não aparece, fala com a Yas pra ela te cadastrar.",
         },
         { status: 400 }
       );
@@ -51,7 +51,7 @@ export async function POST(req: Request) {
       return NextResponse.json(
         {
           message:
-            "Você já alterou a senha uma vez, agora entre em contato com o suporte (a Yasmin mesmo) e peça para ela trocar a senha para você.",
+            "Você já alterou a senha uma vez, agora entre em contato com o suporte (a Yas mesmo) e peça para ela trocar a senha para você.",
         },
         { status: 400 }
       );
@@ -73,7 +73,7 @@ export async function POST(req: Request) {
     return NextResponse.json(
       {
         message:
-          "Algo deu errado. Tente novamente mais tarde ou fale com a Yasmin.",
+          "Algo deu errado. Tente novamente mais tarde ou fale com a Yas.",
       },
       { status: 500 }
     );

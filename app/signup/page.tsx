@@ -4,14 +4,23 @@ import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 
-const formSchema = z.object({
-  ig: z.string().min(2, {
-    message: "Instagram deve ter pelo menos 2 caracteres.",
-  }),
-  password: z.string().min(5, {
-    message: "Senha deve ter pelo menos 5 caracteres.",
-  }),
-});
+const formSchema = z
+  .object({
+    ig: z.string().min(2, {
+      message: "Instagram deve ter pelo menos 2 caracteres.",
+    }),
+    password: z.string().min(5, {
+      message: "Senha deve ter pelo menos 5 caracteres.",
+    }),
+    passwordRepeat: z.string().min(5, {
+      message: "Senha deve ter pelo menos 5 caracteres.",
+    }),
+  })
+  .refine((data) => data.password === data.passwordRepeat, {
+    message: "As senhas não conferem.",
+    path: ["passwordRepeat"],
+  });
+
 import {
   Form,
   FormControl,
@@ -33,6 +42,7 @@ export default function Signup() {
     defaultValues: {
       ig: "",
       password: "",
+      passwordRepeat: "",
     },
   });
 
@@ -63,7 +73,7 @@ export default function Signup() {
       form.setError("password", {
         type: "manual",
         message:
-          "Erro ao tentar cadastrar senha, tente novamente mais tarde (ou fale com a Yasmin).",
+          "Erro ao tentar cadastrar senha, tente novamente mais tarde (ou fale com a Yas).",
       });
     }
   }
@@ -101,7 +111,24 @@ export default function Signup() {
                   <FormLabel>Senha</FormLabel>
                   <FormControl>
                     <Input
-                      placeholder="Crie uma senha agora"
+                      placeholder="Crie uma senha"
+                      {...field}
+                      type="password"
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+            <FormField
+              control={form.control}
+              name="passwordRepeat"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Repetir Senha</FormLabel>
+                  <FormControl>
+                    <Input
+                      placeholder="Repita sua senha"
                       {...field}
                       type="password"
                     />
