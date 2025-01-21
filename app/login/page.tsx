@@ -117,7 +117,7 @@ export default function Login() {
               Entrar
             </Button>
           </form>
-          <Link href="/signup">Clique aqui para fazer o seu cadastro!</Link>
+          <Link href="/signup">Clique aqui para criar sua senha!</Link>
         </Form>
       </div>
     </div>
