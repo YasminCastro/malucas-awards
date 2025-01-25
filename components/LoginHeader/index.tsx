@@ -4,7 +4,7 @@ export default function LoginHeader({ isLoggedIn }: { isLoggedIn: boolean }) {
   return (
     <div className="bg-[#f7f908] flex justify-center items-center flex-col p-14 gap-3 max-md:p-8">
       <h1 className="font-bold text-5xl max-md:text-3xl">
-        Votação irá abrir dia 27/01!
+        Votação irá abrir dia 05/02!
       </h1>
     </div>
   );
