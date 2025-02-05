@@ -2,6 +2,8 @@ import { getCategoriesCollection } from "@/lib/collections/categories";
 import db from "@/lib/dbClient";
 import { NextResponse } from "next/server";
 
+export const dynamic = "force-dynamic";
+
 export async function GET() {
   try {
     const database = await db;
