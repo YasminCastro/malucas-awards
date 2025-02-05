@@ -30,14 +30,14 @@ export default function NomineeCard({
 
   const handleVote = async () => {
     const token = Cookies.get("token");
-    // if (!token) {
-    //   alert("Você precisa estar logado para votar.");
-    //   return;
-    // }
     if (!token) {
-      alert("A votação ainda não iniciou.");
+      alert("Você precisa estar logado para votar.");
       return;
     }
+    // if (!token) {
+    //   alert("A votação ainda não iniciou.");
+    //   return;
+    // }
 
     const decoded: any = jwt.decode(token);
     const voterIg = decoded.ig;
