@@ -5,7 +5,7 @@ export interface INominees {
   ig: string;
   name: string;
   imagePath: string;
-  votes?: number;
+  votes: number;
 }
 
 export interface ICategories {
