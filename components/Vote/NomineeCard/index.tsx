@@ -28,45 +28,45 @@ export default function NomineeCard({
     setVoted(votedNomineeIg === ig);
   }, [votedNomineeIg, ig]);
 
-  const handleVote = async () => {
-    const token = Cookies.get("token");
-    if (!token) {
-      alert("Você precisa estar logado para votar.");
-      return;
-    }
-    // if (!token) {
-    //   alert("A votação ainda não iniciou.");
-    //   return;
-    // }
+  // const handleVote = async () => {
+  //   const token = Cookies.get("token");
+  //   if (!token) {
+  //     alert("Você precisa estar logado para votar.");
+  //     return;
+  //   }
+  //   // if (!token) {
+  //   //   alert("A votação ainda não iniciou.");
+  //   //   return;
+  //   // }
 
-    const decoded: any = jwt.decode(token);
-    const voterIg = decoded.ig;
+  //   const decoded: any = jwt.decode(token);
+  //   const voterIg = decoded.ig;
 
-    try {
-      const response = await fetch("/api/vote", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          ig: voterIg,
-          categoryTitle,
-          nomineeIg: ig,
-          action: voted ? "unvote" : "vote",
-        }),
-      });
+  //   try {
+  //     const response = await fetch("/api/vote", {
+  //       method: "POST",
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //       },
+  //       body: JSON.stringify({
+  //         ig: voterIg,
+  //         categoryTitle,
+  //         nomineeIg: ig,
+  //         action: voted ? "unvote" : "vote",
+  //       }),
+  //     });
 
-      const result = await response.json();
-      if (response.ok) {
-        setVotedNomineeIg(voted ? "" : ig);
-      } else {
-        alert(result.message);
-      }
-    } catch (error) {
-      console.error("Erro ao registrar voto:", error);
-      alert("Erro ao registrar voto. Tente novamente mais tarde.");
-    }
-  };
+  //     const result = await response.json();
+  //     if (response.ok) {
+  //       setVotedNomineeIg(voted ? "" : ig);
+  //     } else {
+  //       alert(result.message);
+  //     }
+  //   } catch (error) {
+  //     console.error("Erro ao registrar voto:", error);
+  //     alert("Erro ao registrar voto. Tente novamente mais tarde.");
+  //   }
+  // };
 
   return (
     <div
