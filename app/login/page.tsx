@@ -69,6 +69,18 @@ export default function Login() {
   }
 
   return (
+    <Link
+      className="flex justify-center items-center min-h-screen flex-col gap-4"
+      href="/"
+    >
+      <h1 className="font-bold text-5xl max-md:text-3xl">Votação Encerrada!</h1>
+      <h2 className="font-bold text-xl max-md:text-base">
+        Voltar aos indicados
+      </h2>
+    </Link>
+  );
+
+  return (
     <div className="flex justify-center items-center min-h-screen">
       <div className="w-1/2 border mx-auto backdrop-blur-xl bg-white/30 p-8 rounded-lg max-md:w-full">
         <Image
