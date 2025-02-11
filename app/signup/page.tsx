@@ -3,6 +3,7 @@
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
+import Link from "next/link";
 
 const formSchema = z
   .object({
@@ -77,6 +78,18 @@ export default function Signup() {
       });
     }
   }
+
+  return (
+    <Link
+      className="flex justify-center items-center min-h-screen flex-col gap-4"
+      href="/"
+    >
+      <h1 className="font-bold text-5xl max-md:text-3xl">Votação Encerrada!</h1>
+      <h2 className="font-bold text-xl max-md:text-base">
+        Voltar aos indicados
+      </h2>
+    </Link>
+  );
 
   return (
     <div className="flex justify-center items-center min-h-screen">
