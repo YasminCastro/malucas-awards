@@ -6,7 +6,7 @@ export default function LoginHeader({ isLoggedIn }: { isLoggedIn: boolean }) {
       <h1 className="font-bold text-5xl max-md:text-3xl">Votação Encerrada!</h1>
       <h2 className="font-bold text-xl max-md:text-base">
         {" "}
-        Resultados dia 15/02!
+        Obrigada por votar!
       </h2>
     </div>
   );
