@@ -1,0 +1,1596 @@
+[
+  {
+    "_id": "678fcf13cb7f4e5b9c2132b5",
+    "title": "MOTY - Maluca Of The Year",
+    "winner": "evelynvfn",
+    "nominees": [
+      {
+        "ig": "evelynvfn",
+        "imagePath": "evelyn.jpeg",
+        "name": "Evelyn",
+        "votes": 12
+      },
+      {
+        "ig": "carolbiajante",
+        "imagePath": "carolbiajante.png",
+        "name": "Carol Biajante",
+        "votes": 0
+      },
+
+      {
+        "ig": "grauciaa",
+        "imagePath": "grauciaa.jpeg",
+        "name": "Glaucia",
+        "votes": 5
+      },
+      {
+        "ig": "karennsts",
+        "imagePath": "karenn.png",
+        "name": "Karenn",
+        "votes": 1
+      },
+      {
+        "ig": "macaia___",
+        "imagePath": "mariaclara.jpeg",
+        "name": "Maria Clara",
+        "votes": 0
+      },
+      {
+        "ig": "rharysoon",
+        "imagePath": "rharyson.jpeg",
+        "name": "Rharyson",
+        "votes": 3
+      },
+      {
+        "ig": "vittorccf",
+        "imagePath": "vittor.jpeg",
+        "name": "Vittor",
+        "votes": 2
+      }
+    ]
+  },
+  {
+    "_id": "678fd0b9cb7f4e5b9c2132b6",
+    "title": "Maluca Mais Normal (?)",
+    "winner": "_sarahmoraiss",
+    "nominees": [
+      {
+        "ig": "_sarahmoraiss",
+        "imagePath": "sarah.png",
+        "name": "Sarah",
+        "votes": 11
+      },
+      {
+        "ig": "carolcrat",
+        "imagePath": "annacrat.jpeg",
+        "name": "Anna Carolina CRAT",
+        "votes": 7
+      },
+      {
+        "ig": "gabrielmarqso",
+        "imagePath": "gabriel.png",
+        "name": "Gabriel",
+        "votes": 2
+      },
+      {
+        "ig": "krisfellipe_",
+        "imagePath": "kris.png",
+        "name": "Kris",
+        "votes": 0
+      },
+      {
+        "ig": "layanerodrigues",
+        "imagePath": "layane.jpeg",
+        "name": "Layane",
+        "votes": 1
+      },
+      {
+        "ig": "lzfamorim",
+        "imagePath": "luizfernando.png",
+        "name": "Luiz Fernando",
+        "votes": 0
+      },
+      {
+        "ig": "mariliamarianoo",
+        "imagePath": "marilia.png",
+        "name": "Marilia",
+        "votes": 0
+      },
+
+      {
+        "ig": "thayscastross",
+        "imagePath": "thays.png",
+        "name": "Thays",
+        "votes": 0
+      },
+      {
+        "ig": "yascastrosss",
+        "imagePath": "yascastrosss.jpg",
+        "name": "Yasmin",
+        "votes": 3
+      }
+    ]
+  },
+  {
+    "_id": "678fd3eacb7f4e5b9c2132b7",
+    "title": "Maluca Cozinheira do Grupo",
+    "winner": "carolbiajante",
+    "nominees": [
+      {
+        "ig": "carolbiajante",
+        "imagePath": "carolbiajante.png",
+        "name": "Carol Biajante",
+        "votes": 12
+      },
+      {
+        "ig": "vieiraannaaa",
+        "imagePath": "annavieira.png",
+        "name": "Anna Vieira",
+        "votes": 2
+      },
+
+      {
+        "ig": "douradodares",
+        "imagePath": "luisgustavo.png",
+        "name": "Luis Gustavo",
+        "votes": 1
+      },
+      {
+        "ig": "lzfamorim",
+        "imagePath": "luizfernando.png",
+        "name": "Luiz Fernando",
+        "votes": 1
+      },
+      {
+        "ig": "rharysoon",
+        "imagePath": "rharyson.jpeg",
+        "name": "Rharyson",
+        "votes": 1
+      },
+      {
+        "ig": "thayscastross",
+        "imagePath": "thays.png",
+        "name": "Thays",
+        "votes": 9
+      }
+    ]
+  },
+  {
+    "_id": "678fd4b8cb7f4e5b9c2132b8",
+    "title": "Sapatão do Ano",
+    "winner": "mariliamarianoo",
+    "nominees": [
+      {
+        "ig": "mariliamarianoo",
+        "imagePath": "marilia.png",
+        "name": "Marilia",
+        "votes": 12
+      },
+      {
+        "ig": "carolcrat",
+        "imagePath": "annacrat.jpeg",
+        "name": "Anna Carolina CRAT",
+        "votes": 0
+      },
+      {
+        "ig": "vieiraannaaa",
+        "imagePath": "annavieira.png",
+        "name": "Anna Vieira",
+        "votes": 3
+      },
+      {
+        "ig": "carolbiajante",
+        "imagePath": "carolbiajante.png",
+        "name": "Carol Biajante",
+        "votes": 7
+      },
+      {
+        "ig": "deyse.bz",
+        "imagePath": "deyse.png",
+        "name": "Deyse",
+        "votes": 1
+      },
+      {
+        "ig": "grauciaa",
+        "imagePath": "grauciaa.jpeg",
+        "name": "Glaucia",
+        "votes": 1
+      },
+      {
+        "ig": "isamraes",
+        "imagePath": "isabelamoraes.png",
+        "name": "Isabela Moraes",
+        "votes": 0
+      },
+      {
+        "ig": "karennsts",
+        "imagePath": "karenn.png",
+        "name": "Karenn",
+        "votes": 0
+      },
+      {
+        "ig": "macaia___",
+        "imagePath": "mariaclara.jpeg",
+        "name": "Maria Clara",
+        "votes": 0
+      },
+
+      {
+        "ig": "_sarahmoraiss",
+        "imagePath": "sarah.png",
+        "name": "Sarah",
+        "votes": 0
+      },
+      {
+        "ig": "yascastrosss",
+        "imagePath": "yascastrosss.jpg",
+        "name": "Yasmin",
+        "votes": 1
+      }
+    ]
+  },
+  {
+    "_id": "678fd54fcb7f4e5b9c2132b9",
+    "title": "Afeminado do Ano",
+    "winner": "viniciushenriques_",
+    "nominees": [
+      {
+        "ig": "viniciushenriques_",
+        "imagePath": "vinicius.png",
+        "name": "Vinicius",
+        "votes": 11
+      },
+      {
+        "ig": "gabrielmarqso",
+        "imagePath": "gabriel.png",
+        "name": "Gabriel",
+        "votes": 1
+      },
+      {
+        "ig": "joseairt0n",
+        "imagePath": "jose.jpeg",
+        "name": "José",
+        "votes": 1
+      },
+      {
+        "ig": "lincolnoliveirs",
+        "imagePath": "lincoln.jpeg",
+        "name": "Lincoln",
+        "votes": 1
+      },
+      {
+        "ig": "douradodares",
+        "imagePath": "luisgustavo.png",
+        "name": "Luis Gustavo",
+        "votes": 0
+      },
+      {
+        "ig": "matheusismos",
+        "imagePath": "matheus.jpeg",
+        "name": "Matheus",
+        "votes": 8
+      },
+      {
+        "ig": "rharysoon",
+        "imagePath": "rharyson.jpeg",
+        "name": "Rharyson",
+        "votes": 3
+      },
+
+      {
+        "ig": "vittorccf",
+        "imagePath": "vittor.jpeg",
+        "name": "Vittor",
+        "votes": 1
+      }
+    ]
+  },
+  {
+    "_id": "678fd5accb7f4e5b9c2132ba",
+    "title": "Bi Vibes do Ano",
+    "winner": "lzfamorim",
+    "nominees": [
+      {
+        "ig": "lzfamorim",
+        "imagePath": "luizfernando.png",
+        "name": "Luiz Fernando",
+        "votes": 6
+      },
+      {
+        "ig": "evelynvfn",
+        "imagePath": "evelyn.jpeg",
+        "name": "Evelyn",
+        "votes": 4
+      },
+      {
+        "ig": "iara_goncalvezz",
+        "imagePath": "iara.jpeg",
+        "name": "Iara",
+        "votes": 6
+      },
+      {
+        "ig": "krisfellipe_",
+        "imagePath": "kris.png",
+        "name": "Kris",
+        "votes": 2
+      },
+      {
+        "ig": "layanerodrigues",
+        "imagePath": "layane.jpeg",
+        "name": "Layane",
+        "votes": 3
+      },
+
+      {
+        "ig": "thayscastross",
+        "imagePath": "thays.png",
+        "name": "Thays",
+        "votes": 5
+      }
+    ]
+  },
+  {
+    "_id": "678fd663cb7f4e5b9c2132bb",
+    "title": "Hello Kitty Bombada do Ano",
+    "winner": "viniciushenriques_",
+    "nominees": [
+      {
+        "ig": "viniciushenriques_",
+        "imagePath": "vinicius.png",
+        "name": "Vinicius",
+        "votes": 11
+      },
+      {
+        "ig": "grauciaa",
+        "imagePath": "grauciaa.jpeg",
+        "name": "Glaucia",
+        "votes": 2
+      },
+      {
+        "ig": "iara_goncalvezz",
+        "imagePath": "iara.jpeg",
+        "name": "Iara",
+        "votes": 2
+      },
+      {
+        "ig": "krisfellipe_",
+        "imagePath": "kris.png",
+        "name": "Kris",
+        "votes": 3
+      },
+      {
+        "ig": "lincolnoliveirs",
+        "imagePath": "lincoln.jpeg",
+        "name": "Lincoln",
+        "votes": 0
+      },
+      {
+        "ig": "lzfamorim",
+        "imagePath": "luizfernando.png",
+        "name": "Luiz Fernando",
+        "votes": 3
+      },
+      {
+        "ig": "macaia___",
+        "imagePath": "mariaclara.jpeg",
+        "name": "Maria Clara",
+        "votes": 0
+      },
+      {
+        "ig": "rharysoon",
+        "imagePath": "rharyson.jpeg",
+        "name": "Rharyson",
+        "votes": 0
+      },
+      {
+        "ig": "thayscastross",
+        "imagePath": "thays.png",
+        "name": "Thays",
+        "votes": 1
+      },
+
+      {
+        "ig": "vittorccf",
+        "imagePath": "vittor.jpeg",
+        "name": "Vittor",
+        "votes": 4
+      }
+    ]
+  },
+  {
+    "_id": "678fd698cb7f4e5b9c2132bc",
+    "title": "Maluca TI do Ano",
+    "winner": "yascastrosss",
+    "nominees": [
+      {
+        "ig": "yascastrosss",
+        "imagePath": "yascastrosss.jpg",
+        "name": "Yasmin",
+        "votes": 16
+      },
+      {
+        "ig": "carolbiajante",
+        "imagePath": "carolbiajante.png",
+        "name": "Carol Biajante",
+        "votes": 1
+      },
+      {
+        "ig": "gabrielmarqso",
+        "imagePath": "gabriel.png",
+        "name": "Gabriel",
+        "votes": 0
+      },
+      {
+        "ig": "grauciaa",
+        "imagePath": "grauciaa.jpeg",
+        "name": "Glaucia",
+        "votes": 6
+      },
+      {
+        "ig": "rharysoon",
+        "imagePath": "rharyson.jpeg",
+        "name": "Rharyson",
+        "votes": 2
+      },
+      {
+        "ig": "viniciushenriques_",
+        "imagePath": "vinicius.png",
+        "name": "Vinicius",
+        "votes": 0
+      },
+      {
+        "ig": "vittorccf",
+        "imagePath": "vittor.jpeg",
+        "name": "Vittor",
+        "votes": 0
+      }
+    ]
+  },
+  {
+    "_id": "678fd720cb7f4e5b9c2132bd",
+    "title": "Gamer do Ano",
+    "winner": "carolbiajante",
+    "nominees": [
+      {
+        "ig": "carolbiajante",
+        "imagePath": "carolbiajante.png",
+        "name": "Carol Biajante",
+        "votes": 10
+      },
+      {
+        "ig": "iara_goncalvezz",
+        "imagePath": "iara.jpeg",
+        "name": "Iara",
+        "votes": 0
+      },
+      {
+        "ig": "lincolnoliveirs",
+        "imagePath": "lincoln.jpeg",
+        "name": "Lincoln",
+        "votes": 4
+      },
+      {
+        "ig": "douradodares",
+        "imagePath": "luisgustavo.png",
+        "name": "Luis Gustavo",
+        "votes": 0
+      },
+      {
+        "ig": "matheusismos",
+        "imagePath": "matheus.jpeg",
+        "name": "Matheus",
+        "votes": 0
+      },
+      {
+        "ig": "rharysoon",
+        "imagePath": "rharyson.jpeg",
+        "name": "Rharyson",
+        "votes": 2
+      },
+      {
+        "ig": "vittorccf",
+        "imagePath": "vittor.jpeg",
+        "name": "Vittor",
+        "votes": 9
+      },
+      {
+        "ig": "yascastrosss",
+        "imagePath": "yascastrosss.jpg",
+        "name": "Yasmin",
+        "votes": 1
+      }
+    ]
+  },
+  {
+    "_id": "678fdadfcb7f4e5b9c2132be",
+    "title": "Maluca Cinéfila",
+    "winner": "rharysoon",
+    "nominees": [
+      {
+        "ig": "rharysoon",
+        "imagePath": "rharyson.jpeg",
+        "name": "Rharyson",
+        "votes": 7
+      },
+      {
+        "ig": "annekdias",
+        "imagePath": "anne.png",
+        "name": "Anne",
+        "votes": 0
+      },
+      {
+        "ig": "gabrielmarqso",
+        "imagePath": "gabriel.png",
+        "name": "Gabriel",
+        "votes": 1
+      },
+      {
+        "ig": "iara_goncalvezz",
+        "imagePath": "iara.jpeg",
+        "name": "Iara",
+        "votes": 1
+      },
+      {
+        "ig": "krisfellipe_",
+        "imagePath": "kris.png",
+        "name": "Kris",
+        "votes": 3
+      },
+      {
+        "ig": "layanerodrigues",
+        "imagePath": "layane.jpeg",
+        "name": "Layane",
+        "votes": 1
+      },
+      {
+        "ig": "lincolnoliveirs",
+        "imagePath": "lincoln.jpeg",
+        "name": "Lincoln",
+        "votes": 3
+      },
+      {
+        "ig": "matheusismos",
+        "imagePath": "matheus.jpeg",
+        "name": "Matheus",
+        "votes": 2
+      },
+
+      {
+        "ig": "thayscastross",
+        "imagePath": "thays.png",
+        "name": "Thays",
+        "votes": 1
+      },
+      {
+        "ig": "viniciushenriques_",
+        "imagePath": "vinicius.png",
+        "name": "Vinicius",
+        "votes": 0
+      },
+      {
+        "ig": "vittorccf",
+        "imagePath": "vittor.jpeg",
+        "name": "Vittor",
+        "votes": 5
+      },
+      {
+        "ig": "yascastrosss",
+        "imagePath": "yascastrosss.jpg",
+        "name": "Yasmin",
+        "votes": 1
+      }
+    ]
+  },
+  {
+    "_id": "678fdcc7cb7f4e5b9c2132bf",
+    "title": "Miss Tarja Preta",
+    "winner": "macaia___",
+    "nominees": [
+      {
+        "ig": "macaia___",
+        "imagePath": "mariaclara.jpeg",
+        "name": "Maria Clara",
+        "votes": 11
+      },
+      {
+        "ig": "annekdias",
+        "imagePath": "anne.png",
+        "name": "Anne",
+        "votes": 5
+      },
+      {
+        "ig": "evelynvfn",
+        "imagePath": "evelyn.jpeg",
+        "name": "Evelyn",
+        "votes": 4
+      },
+
+      {
+        "ig": "rharysoon",
+        "imagePath": "rharyson.jpeg",
+        "name": "Rharyson",
+        "votes": 6
+      },
+      {
+        "ig": "thayscastross",
+        "imagePath": "thays.png",
+        "name": "Thays",
+        "votes": 0
+      }
+    ]
+  },
+  {
+    "_id": "678fdde5cb7f4e5b9c2132c0",
+    "title": "Musa do Copo Virado (Maluca que Mais Bebe)",
+    "winner": "carolbiajante",
+    "nominees": [
+      {
+        "ig": "carolbiajante",
+        "imagePath": "carolbiajante.png",
+        "name": "Carol Biajante",
+        "votes": 8
+      },
+      {
+        "ig": "carolcrat",
+        "imagePath": "annacrat.jpeg",
+        "name": "Anna Carolina CRAT",
+        "votes": 0
+      },
+      {
+        "ig": "vieiraannaaa",
+        "imagePath": "annavieira.png",
+        "name": "Anna Vieira",
+        "votes": 7
+      },
+      {
+        "ig": "annekdias",
+        "imagePath": "anne.png",
+        "name": "Anne",
+        "votes": 1
+      },
+
+      {
+        "ig": "lincolnoliveirs",
+        "imagePath": "lincoln.jpeg",
+        "name": "Lincoln",
+        "votes": 1
+      },
+      {
+        "ig": "douradodares",
+        "imagePath": "luisgustavo.png",
+        "name": "Luis Gustavo",
+        "votes": 0
+      },
+      {
+        "ig": "lzfamorim",
+        "imagePath": "luizfernando.png",
+        "name": "Luiz Fernando",
+        "votes": 2
+      },
+      {
+        "ig": "rharysoon",
+        "imagePath": "rharyson.jpeg",
+        "name": "Rharyson",
+        "votes": 5
+      }
+    ]
+  },
+  {
+    "_id": "678fde7fcb7f4e5b9c2132c1",
+    "title": "Best Crazy International Latin",
+    "winner": "joseairt0n",
+    "nominees": [
+      {
+        "ig": "joseairt0n",
+        "imagePath": "jose.jpeg",
+        "name": "José",
+        "votes": 26
+      }
+    ]
+  },
+  {
+    "_id": "678fe068cb7f4e5b9c2132c2",
+    "title": "Maior contadora de historias",
+    "winner": "macaia___",
+    "nominees": [
+      {
+        "ig": "macaia___",
+        "imagePath": "mariaclara.jpeg",
+        "name": "Maria Clara",
+        "votes": 10
+      },
+      {
+        "ig": "grauciaa",
+        "imagePath": "grauciaa.jpeg",
+        "name": "Glaucia",
+        "votes": 6
+      },
+      {
+        "ig": "lincolnoliveirs",
+        "imagePath": "lincoln.jpeg",
+        "name": "Lincoln",
+        "votes": 6
+      },
+
+      {
+        "ig": "rharysoon",
+        "imagePath": "rharyson.jpeg",
+        "name": "Rharyson",
+        "votes": 2
+      }
+    ]
+  },
+  {
+    "_id": "678fe196cb7f4e5b9c2132c3",
+    "title": "Maluca Gen Z",
+    "winner": "iara_goncalvezz",
+    "nominees": [
+      {
+        "ig": "iara_goncalvezz",
+        "imagePath": "iara.jpeg",
+        "name": "Iara",
+        "votes": 7
+      },
+      {
+        "ig": "gabrielmarqso",
+        "imagePath": "gabriel.png",
+        "name": "Gabriel",
+        "votes": 2
+      },
+
+      {
+        "ig": "krisfellipe_",
+        "imagePath": "kris.png",
+        "name": "Kris",
+        "votes": 2
+      },
+      {
+        "ig": "_sarahmoraiss",
+        "imagePath": "sarah.png",
+        "name": "Sarah",
+        "votes": 1
+      },
+      {
+        "ig": "viniciushenriques_",
+        "imagePath": "vinicius.png",
+        "name": "Vinicius",
+        "votes": 3
+      },
+      {
+        "ig": "vittorccf",
+        "imagePath": "vittor.jpeg",
+        "name": "Vittor",
+        "votes": 4
+      },
+      {
+        "ig": "yascastrosss",
+        "imagePath": "yascastrosss.jpg",
+        "name": "Yasmin",
+        "votes": 7
+      }
+    ]
+  },
+  {
+    "_id": "678fe19fcb7f4e5b9c2132c4",
+    "title": "Miss Simpatia",
+    "winner": "grauciaa",
+    "nominees": [
+      {
+        "ig": "grauciaa",
+        "imagePath": "grauciaa.jpeg",
+        "name": "Glaucia",
+        "votes": 9
+      },
+      {
+        "ig": "iara_goncalvezz",
+        "imagePath": "iara.jpeg",
+        "name": "Iara",
+        "votes": 3
+      },
+      {
+        "ig": "lincolnoliveirs",
+        "imagePath": "lincoln.jpeg",
+        "name": "Lincoln",
+        "votes": 6
+      },
+      {
+        "ig": "lzfamorim",
+        "imagePath": "luizfernando.png",
+        "name": "Luiz Fernando",
+        "votes": 8
+      }
+    ]
+  },
+  {
+    "_id": "678fe209cb7f4e5b9c2132c5",
+    "title": "Cronicamente Online",
+    "winner": "vittorccf",
+    "nominees": [
+      {
+        "ig": "vittorccf",
+        "imagePath": "vittor.jpeg",
+        "name": "Vittor",
+        "votes": 8
+      },
+      {
+        "ig": "annekdias",
+        "imagePath": "anne.png",
+        "name": "Anne",
+        "votes": 1
+      },
+      {
+        "ig": "gabrielmarqso",
+        "imagePath": "gabriel.png",
+        "name": "Gabriel",
+        "votes": 4
+      },
+      {
+        "ig": "grauciaa",
+        "imagePath": "grauciaa.jpeg",
+        "name": "Glaucia",
+        "votes": 7
+      },
+      {
+        "ig": "krisfellipe_",
+        "imagePath": "kris.png",
+        "name": "Kris",
+        "votes": 1
+      },
+      {
+        "ig": "rharysoon",
+        "imagePath": "rharyson.jpeg",
+        "name": "Rharyson",
+        "votes": 3
+      },
+      {
+        "ig": "viniciushenriques_",
+        "imagePath": "vinicius.png",
+        "name": "Vinicius",
+        "votes": 0
+      },
+
+      {
+        "ig": "yascastrosss",
+        "imagePath": "yascastrosss.jpg",
+        "name": "Yasmin",
+        "votes": 2
+      }
+    ]
+  },
+  {
+    "_id": "678fe2e7cb7f4e5b9c2132c6",
+    "title": "Ausência confirmada",
+    "winner": "vieiraannaaa",
+    "nominees": [
+      {
+        "ig": "vieiraannaaa",
+        "imagePath": "annavieira.png",
+        "name": "Anna Vieira",
+        "votes": 13
+      },
+      {
+        "ig": "carolcrat",
+        "imagePath": "annacrat.jpeg",
+        "name": "Anna Carolina CRAT",
+        "votes": 0
+      },
+
+      {
+        "ig": "annekdias",
+        "imagePath": "anne.png",
+        "name": "Anne",
+        "votes": 4
+      },
+      {
+        "ig": "carolbiajante",
+        "imagePath": "carolbiajante.png",
+        "name": "Carol Biajante",
+        "votes": 1
+      },
+      {
+        "ig": "evelynvfn",
+        "imagePath": "evelyn.jpeg",
+        "name": "Evelyn",
+        "votes": 1
+      },
+      {
+        "ig": "mariliamarianoo",
+        "imagePath": "marilia.png",
+        "name": "Marilia",
+        "votes": 4
+      },
+      {
+        "ig": "_sarahmoraiss",
+        "imagePath": "sarah.png",
+        "name": "Sarah",
+        "votes": 3
+      }
+    ]
+  },
+  {
+    "_id": "6794ef3a1b41741b76d8d696",
+    "title": "Topa Tudo",
+    "winner": "grauciaa",
+    "nominees": [
+      {
+        "ig": "grauciaa",
+        "imagePath": "grauciaa.jpeg",
+        "name": "Glaucia",
+        "votes": 12
+      },
+      {
+        "ig": "iara_goncalvezz",
+        "imagePath": "iara.jpeg",
+        "name": "Iara",
+        "votes": 2
+      },
+      {
+        "ig": "lzfamorim",
+        "imagePath": "luizfernando.png",
+        "name": "Luiz Fernando",
+        "votes": 1
+      },
+      {
+        "ig": "rharysoon",
+        "imagePath": "rharyson.jpeg",
+        "name": "Rharyson",
+        "votes": 3
+      },
+      {
+        "ig": "vittorccf",
+        "imagePath": "vittor.jpeg",
+        "name": "Vittor",
+        "votes": 2
+      },
+      {
+        "ig": "yascastrosss",
+        "imagePath": "yascastrosss.jpg",
+        "name": "Yasmin",
+        "votes": 3
+      }
+    ]
+  },
+  {
+    "_id": "6794ef77aaa6f70dcd7bbc4e",
+    "title": "Entrega de Entretenimento",
+    "winner": "evelynvfn",
+    "nominees": [
+      {
+        "ig": "evelynvfn",
+        "imagePath": "evelyn.jpeg",
+        "name": "Evelyn",
+        "votes": 12
+      },
+      {
+        "ig": "grauciaa",
+        "imagePath": "grauciaa.jpeg",
+        "name": "Glaucia",
+        "votes": 3
+      },
+      {
+        "ig": "lincolnoliveirs",
+        "imagePath": "lincoln.jpeg",
+        "name": "Lincoln",
+        "votes": 0
+      },
+      {
+        "ig": "lzfamorim",
+        "imagePath": "luizfernando.png",
+        "name": "Luiz Fernando",
+        "votes": 1
+      },
+      {
+        "ig": "rharysoon",
+        "imagePath": "rharyson.jpeg",
+        "name": "Rharyson",
+        "votes": 10
+      }
+    ]
+  },
+  {
+    "_id": "6794efedaaa6f70dcd7bbc4f",
+    "title": "Mais Provável de Ganhar o BBB",
+    "winner": "grauciaa",
+    "nominees": [
+      {
+        "ig": "grauciaa",
+        "imagePath": "grauciaa.jpeg",
+        "name": "Glaucia",
+        "votes": 3
+      },
+      {
+        "ig": "carolcrat",
+        "imagePath": "annacrat.jpeg",
+        "name": "Anna Carolina CRAT",
+        "votes": 0
+      },
+      {
+        "ig": "vieiraannaaa",
+        "imagePath": "annavieira.png",
+        "name": "Anna Vieira",
+        "votes": 0
+      },
+      {
+        "ig": "annekdias",
+        "imagePath": "anne.png",
+        "name": "Anne",
+        "votes": 0
+      },
+      {
+        "ig": "carolbiajante",
+        "imagePath": "carolbiajante.png",
+        "name": "Carol Biajante",
+        "votes": 3
+      },
+      {
+        "ig": "deyse.bz",
+        "imagePath": "deyse.png",
+        "name": "Deyse",
+        "votes": 1
+      },
+      {
+        "ig": "evelynvfn",
+        "imagePath": "evelyn.jpeg",
+        "name": "Evelyn",
+        "votes": 1
+      },
+      {
+        "ig": "gabrielmarqso",
+        "imagePath": "gabriel.png",
+        "name": "Gabriel",
+        "votes": 0
+      },
+
+      {
+        "ig": "iara_goncalvezz",
+        "imagePath": "iara.jpeg",
+        "name": "Iara",
+        "votes": 2
+      },
+      {
+        "ig": "isamraes",
+        "imagePath": "isabelamoraes.png",
+        "name": "Isabela Moraes",
+        "votes": 0
+      },
+      {
+        "ig": "joseairt0n",
+        "imagePath": "jose.jpeg",
+        "name": "José",
+        "votes": 0
+      },
+      {
+        "ig": "karennsts",
+        "imagePath": "karenn.png",
+        "name": "Karenn",
+        "votes": 3
+      },
+      {
+        "ig": "krisfellipe_",
+        "imagePath": "kris.png",
+        "name": "Kris",
+        "votes": 0
+      },
+      {
+        "ig": "layanerodrigues",
+        "imagePath": "layane.jpeg",
+        "name": "Layane",
+        "votes": 0
+      },
+      {
+        "ig": "lincolnoliveirs",
+        "imagePath": "lincoln.jpeg",
+        "name": "Lincoln",
+        "votes": 2
+      },
+      {
+        "ig": "douradodares",
+        "imagePath": "luisgustavo.png",
+        "name": "Luis Gustavo",
+        "votes": 1
+      },
+      {
+        "ig": "lzfamorim",
+        "imagePath": "luizfernando.png",
+        "name": "Luiz Fernando",
+        "votes": 0
+      },
+      {
+        "ig": "macaia___",
+        "imagePath": "mariaclara.jpeg",
+        "name": "Maria Clara",
+        "votes": 1
+      },
+      {
+        "ig": "mariliamarianoo",
+        "imagePath": "marilia.png",
+        "name": "Marilia",
+        "votes": 1
+      },
+      {
+        "ig": "matheusismos",
+        "imagePath": "matheus.jpeg",
+        "name": "Matheus",
+        "votes": 3
+      },
+      {
+        "ig": "rharysoon",
+        "imagePath": "rharyson.jpeg",
+        "name": "Rharyson",
+        "votes": 2
+      },
+      {
+        "ig": "_sarahmoraiss",
+        "imagePath": "sarah.png",
+        "name": "Sarah",
+        "votes": 0
+      },
+      {
+        "ig": "thayscastross",
+        "imagePath": "thays.png",
+        "name": "Thays",
+        "votes": 0
+      },
+      {
+        "ig": "viniciushenriques_",
+        "imagePath": "vinicius.png",
+        "name": "Vinicius",
+        "votes": 0
+      },
+      {
+        "ig": "vittorccf",
+        "imagePath": "vittor.jpeg",
+        "name": "Vittor",
+        "votes": 0
+      },
+      {
+        "ig": "yascastrosss",
+        "imagePath": "yascastrosss.jpg",
+        "name": "Yasmin",
+        "votes": 1
+      }
+    ]
+  },
+  {
+    "_id": "6794f0bbaaa6f70dcd7bbc51",
+    "title": "Sofreu Mais Que a Juliette",
+    "winner": "rharysoon",
+    "nominees": [
+      {
+        "ig": "rharysoon",
+        "imagePath": "rharyson.jpeg",
+        "name": "Rharyson",
+        "votes": 14
+      },
+      {
+        "ig": "vieiraannaaa",
+        "imagePath": "annavieira.png",
+        "name": "Anna Vieira",
+        "votes": 1
+      },
+      {
+        "ig": "annekdias",
+        "imagePath": "anne.png",
+        "name": "Anne",
+        "votes": 1
+      },
+      {
+        "ig": "joseairt0n",
+        "imagePath": "jose.jpeg",
+        "name": "José",
+        "votes": 2
+      },
+      {
+        "ig": "lincolnoliveirs",
+        "imagePath": "lincoln.jpeg",
+        "name": "Lincoln",
+        "votes": 3
+      },
+      {
+        "ig": "matheusismos",
+        "imagePath": "matheus.jpeg",
+        "name": "Matheus",
+        "votes": 3
+      }
+    ]
+  },
+  {
+    "_id": "6794f168503c3b66ece59c79",
+    "title": "Workaholic",
+    "winner": "carolcrat",
+    "nominees": [
+      {
+        "ig": "carolcrat",
+        "imagePath": "annacrat.jpeg",
+        "name": "Anna Carolina CRAT",
+        "votes": 9
+      },
+      {
+        "ig": "annekdias",
+        "imagePath": "anne.png",
+        "name": "Anne",
+        "votes": 0
+      },
+      {
+        "ig": "grauciaa",
+        "imagePath": "grauciaa.jpeg",
+        "name": "Glaucia",
+        "votes": 8
+      },
+      {
+        "ig": "isamraes",
+        "imagePath": "isabelamoraes.png",
+        "name": "Isabela Moraes",
+        "votes": 3
+      },
+      {
+        "ig": "joseairt0n",
+        "imagePath": "jose.jpeg",
+        "name": "José",
+        "votes": 0
+      },
+      {
+        "ig": "lincolnoliveirs",
+        "imagePath": "lincoln.jpeg",
+        "name": "Lincoln",
+        "votes": 1
+      },
+      {
+        "ig": "lzfamorim",
+        "imagePath": "luizfernando.png",
+        "name": "Luiz Fernando",
+        "votes": 1
+      },
+      {
+        "ig": "macaia___",
+        "imagePath": "mariaclara.jpeg",
+        "name": "Maria Clara",
+        "votes": 0
+      },
+      {
+        "ig": "mariliamarianoo",
+        "imagePath": "marilia.png",
+        "name": "Marilia",
+        "votes": 0
+      },
+      {
+        "ig": "thayscastross",
+        "imagePath": "thays.png",
+        "name": "Thays",
+        "votes": 3
+      },
+      {
+        "ig": "vittorccf",
+        "imagePath": "vittor.jpeg",
+        "name": "Vittor",
+        "votes": -1
+      }
+    ]
+  },
+  {
+    "_id": "67a0f69eda1508ffcd025309",
+    "title": "Mais Provável de Perder o BBB na Primeira Semana",
+    "winner": "karennsts",
+    "nominees": [
+      {
+        "ig": "karennsts",
+        "imagePath": "karenn.png",
+        "name": "Karenn",
+        "votes": 5
+      },
+      {
+        "ig": "carolcrat",
+        "imagePath": "annacrat.jpeg",
+        "name": "Anna Carolina CRAT",
+        "votes": 1
+      },
+      {
+        "ig": "vieiraannaaa",
+        "imagePath": "annavieira.png",
+        "name": "Anna Vieira",
+        "votes": 0
+      },
+      {
+        "ig": "annekdias",
+        "imagePath": "anne.png",
+        "name": "Anne",
+        "votes": 0
+      },
+      {
+        "ig": "carolbiajante",
+        "imagePath": "carolbiajante.png",
+        "name": "Carol Biajante",
+        "votes": 0
+      },
+      {
+        "ig": "deyse.bz",
+        "imagePath": "deyse.png",
+        "name": "Deyse",
+        "votes": 1
+      },
+      {
+        "ig": "evelynvfn",
+        "imagePath": "evelyn.jpeg",
+        "name": "Evelyn",
+        "votes": 1
+      },
+      {
+        "ig": "gabrielmarqso",
+        "imagePath": "gabriel.png",
+        "name": "Gabriel",
+        "votes": 2
+      },
+      {
+        "ig": "grauciaa",
+        "imagePath": "grauciaa.jpeg",
+        "name": "Glaucia",
+        "votes": 2
+      },
+      {
+        "ig": "iara_goncalvezz",
+        "imagePath": "iara.jpeg",
+        "name": "Iara",
+        "votes": 0
+      },
+      {
+        "ig": "isamraes",
+        "imagePath": "isabelamoraes.png",
+        "name": "Isabela Moraes",
+        "votes": 0
+      },
+      {
+        "ig": "joseairt0n",
+        "imagePath": "jose.jpeg",
+        "name": "José",
+        "votes": 1
+      },
+
+      {
+        "ig": "krisfellipe_",
+        "imagePath": "kris.png",
+        "name": "Kris",
+        "votes": 1
+      },
+      {
+        "ig": "layanerodrigues",
+        "imagePath": "layane.jpeg",
+        "name": "Layane",
+        "votes": 2
+      },
+      {
+        "ig": "lincolnoliveirs",
+        "imagePath": "lincoln.jpeg",
+        "name": "Lincoln",
+        "votes": 0
+      },
+      {
+        "ig": "douradodares",
+        "imagePath": "luisgustavo.png",
+        "name": "Luis Gustavo",
+        "votes": 4
+      },
+      {
+        "ig": "lzfamorim",
+        "imagePath": "luizfernando.png",
+        "name": "Luiz Fernando",
+        "votes": 0
+      },
+      {
+        "ig": "macaia___",
+        "imagePath": "mariaclara.jpeg",
+        "name": "Maria Clara",
+        "votes": 1
+      },
+      {
+        "ig": "mariliamarianoo",
+        "imagePath": "marilia.png",
+        "name": "Marilia",
+        "votes": 0
+      },
+      {
+        "ig": "matheusismos",
+        "imagePath": "matheus.jpeg",
+        "name": "Matheus",
+        "votes": 1
+      },
+      {
+        "ig": "rharysoon",
+        "imagePath": "rharyson.jpeg",
+        "name": "Rharyson",
+        "votes": 0
+      },
+      {
+        "ig": "_sarahmoraiss",
+        "imagePath": "sarah.png",
+        "name": "Sarah",
+        "votes": 2
+      },
+      {
+        "ig": "thayscastross",
+        "imagePath": "thays.png",
+        "name": "Thays",
+        "votes": 0
+      },
+      {
+        "ig": "viniciushenriques_",
+        "imagePath": "vinicius.png",
+        "name": "Vinicius",
+        "votes": 0
+      },
+      {
+        "ig": "vittorccf",
+        "imagePath": "vittor.jpeg",
+        "name": "Vittor",
+        "votes": 1
+      },
+      {
+        "ig": "yascastrosss",
+        "imagePath": "yascastrosss.jpg",
+        "name": "Yasmin",
+        "votes": 0
+      }
+    ]
+  },
+  {
+    "_id": "678fc978cb7f4e5b9c2132b4",
+    "title": "Todas as malucas (atualizado - 21/01/2025)",
+    "nominees": [
+      {
+        "ig": "grauciaa",
+        "imagePath": "grauciaa.jpeg",
+        "name": "Glaucia",
+        "votes": 2
+      },
+      {
+        "ig": "yascastrosss",
+        "imagePath": "yascastrosss.jpg",
+        "name": "Yasmin",
+        "votes": 1
+      },
+      {
+        "ig": "vieiraannaaa",
+        "imagePath": "annavieira.png",
+        "name": "Anna Vieira",
+        "votes": 0
+      },
+      {
+        "ig": "carolcrat",
+        "imagePath": "annacrat.jpeg",
+        "name": "Anna Carolina CRAT",
+        "votes": 0
+      },
+      {
+        "ig": "annekdias",
+        "imagePath": "anne.png",
+        "name": "Anne",
+        "votes": 0
+      },
+      {
+        "ig": "carolbiajante",
+        "imagePath": "carolbiajante.png",
+        "name": "Carol Biajante",
+        "votes": 1
+      },
+      {
+        "ig": "deyse.bz",
+        "imagePath": "deyse.png",
+        "name": "Deyse",
+        "votes": 0
+      },
+      {
+        "ig": "evelynvfn",
+        "imagePath": "evelyn.jpeg",
+        "name": "Evelyn",
+        "votes": 0
+      },
+      {
+        "ig": "gabrielmarqso",
+        "imagePath": "gabriel.png",
+        "name": "Gabriel",
+        "votes": 0
+      },
+      {
+        "ig": "iara_goncalvezz",
+        "imagePath": "iara.jpeg",
+        "name": "Iara",
+        "votes": 0
+      },
+      {
+        "ig": "isamraes",
+        "imagePath": "isabelamoraes.png",
+        "name": "Isabela Moraes",
+        "votes": 0
+      },
+      {
+        "ig": "joseairt0n",
+        "imagePath": "jose.jpeg",
+        "name": "José",
+        "votes": 0
+      },
+      {
+        "ig": "karennsts",
+        "imagePath": "karenn.png",
+        "name": "Karenn",
+        "votes": 1
+      },
+      {
+        "ig": "layanerodrigues",
+        "imagePath": "layane.jpeg",
+        "name": "Layane",
+        "votes": 0
+      },
+      {
+        "ig": "lincolnoliveirs",
+        "imagePath": "lincoln.jpeg",
+        "name": "Lincoln",
+        "votes": 0
+      },
+      {
+        "ig": "douradodares",
+        "imagePath": "luisgustavo.png",
+        "name": "Luis Gustavo",
+        "votes": 0
+      },
+      {
+        "ig": "lzfamorim",
+        "imagePath": "luizfernando.png",
+        "name": "Luiz Fernando",
+        "votes": 0
+      },
+      {
+        "ig": "macaia___",
+        "imagePath": "mariaclara.jpeg",
+        "name": "Maria Clara",
+        "votes": 0
+      },
+      {
+        "ig": "mariliamarianoo",
+        "imagePath": "marilia.png",
+        "name": "Marilia",
+        "votes": 0
+      },
+      {
+        "ig": "matheusismos",
+        "imagePath": "matheus.jpeg",
+        "name": "Matheus",
+        "votes": 0
+      },
+      {
+        "ig": "krisfellipe_",
+        "imagePath": "kris.png",
+        "name": "Kris",
+        "votes": 0
+      },
+      {
+        "ig": "_sarahmoraiss",
+        "imagePath": "sarah.png",
+        "name": "Sarah",
+        "votes": 0
+      },
+      {
+        "ig": "thayscastross",
+        "imagePath": "thays.png",
+        "name": "Thays",
+        "votes": 0
+      },
+      {
+        "ig": "viniciushenriques_",
+        "imagePath": "vinicius.png",
+        "name": "Vinicius",
+        "votes": 0
+      },
+      {
+        "ig": "vittorccf",
+        "imagePath": "vittor.jpeg",
+        "name": "Vittor",
+        "votes": 0
+      },
+      {
+        "ig": "rharysoon",
+        "imagePath": "rharyson.jpeg",
+        "name": "Rharyson",
+        "votes": 2
+      }
+    ]
+  }
+]

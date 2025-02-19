@@ -83,7 +83,7 @@ export default function NomineeCard({
         />
       </div>
       <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black to-transparent flex flex-col gap-2 ">
-        {winner === name && (
+        {winner === ig && (
           <span className="bg-[#f93fff] text-black font-bold p-1 w-fit">
             GANHADOR
           </span>

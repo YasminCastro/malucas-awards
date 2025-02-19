@@ -1,19 +1,17 @@
-import { getCategoriesCollection } from "@/lib/collections/categories";
-import db from "@/lib/dbClient";
 import { NextResponse } from "next/server";
+
+import { promises as fs } from "fs";
+import path from "path";
 
 export const dynamic = "force-dynamic";
 
 export async function GET() {
   try {
-    const database = await db;
-    if (!database) throw new Error("Database is not connected");
+    const filePath = path.join(process.cwd(), "categories.json");
+    const fileContents = await fs.readFile(filePath, "utf-8");
+    const categories = JSON.parse(fileContents);
 
-    const categoriesCollection = await getCategoriesCollection();
-
-    const result = await categoriesCollection.find().toArray();
-
-    return NextResponse.json(result, { status: 200 });
+    return NextResponse.json(categories, { status: 200 });
   } catch (error: any) {
     return NextResponse.json({ message: error.message }, { status: 500 });
   }
